@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2021.2 (Released July 1, 2021) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>Constanten</TITLE>
+<META NAME="description" CONTENT="Constanten">
+<META NAME="keywords" CONTENT="use_cases_functioneel_ontwerp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2021.2">
+
+<LINK REL="STYLESHEET" HREF="use_cases_functioneel_ontwerp.css">
+
+<LINK REL="next" HREF="node27.html">
+<LINK REL="previous" HREF="node25.html">
+<LINK REL="next" HREF="node27.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node27.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node16.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node25.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html132"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Volgende:</B> <A
+ HREF="node27.html">Lege koppeling</A>
+<B> Omhoog:</B> <A
+ HREF="node16.html">Wat is een goed</A>
+<B> Vorige:</B> <A
+ HREF="node25.html">Lokaliteit</A>
+ &nbsp; <B>  <A ID="tex2html133"
+  HREF="node1.html">Inhoudsopgave</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A ID="SECTION000410000000000000000">
+Constanten</A>
+</H2>
+
+<P>
+Ook dit principe speelt op verschillende niveaus. De eis van lokaliteit
+	is bijvoorbeeld een van de redenen dat we constanten definiëren. Stel er
+	zijn in het containersysteem vijf verschillende typen containers en dat
+	aantal komt op tien plaatsen in de code voor. Als we op al die tien
+	plaatsen het getal 5 neerzetten en er komt een type container bij, dan
+	moeten we tien wijzigingen aanbrengen. Is er ergens in het systeem een
+	constante AANTALCONTAINERTYPEN gedefinieerd, dan hoeven we alleen
+	de waarde van die constante te veranderen.
+
+<P>
+Ook onze voorkeur voor attributen die van buiten de klasse niet ge-
+	wijzigd kunnen worden (information hiding), is terug te voeren op het
+	principe van lokaliteit: de verantwoordelijkheid voor het beheer van een
+	dergelijk attribuut ligt geheel binnen de klasse, in plaats van verspreid
+	door het hele programma. Met het oog daarop, maken we attributen
+	vrijwel altijd private en zijn we voorzichtig met het exporteren van
+	referenties naar attributen van een objecttype.
+	Het bereiken van lokaliteit is in de praktijk een van de moeilijkste zaken
+	bij objectgeoriënteerd programmeren (en bij programmeren in het alge-
+	meen).
+	Op grond van het principe van lokaliteit willen we aan een klasse
+	gemakkelijk een nieuwe subklasse kunnen toevoegen. Stel bijvoorbeeld
+	dat er in het containersysteem een klasse Container is, met een subklasse
+	voor elke soort container. Als we nu een nieuw soort container willen
+	toevoegen, zullen we in elk geval een nieuwe subklasse van Container
+	moeten definiëren. Daarnaast zijn wijzigingen nodig op plekken in de
+	code waar instanties van de subklassen van Container gecreëerd worden
+	en op plekken waar het nodig is na te gaan met welk type container we
+	nu precies te maken hebben. Lokaliteit vereist dat dit op zo min mogelijk
+	plaatsen voorkomt. In de volgende leereenheid zullen we zien hoe Java
+	ons daarbij helpt.
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A
+ HREF="node27.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node16.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node25.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html132"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Volgende:</B> <A
+ HREF="node27.html">Lege koppeling</A>
+<B> Omhoog:</B> <A
+ HREF="node16.html">Wat is een goed</A>
+<B> Vorige:</B> <A
+ HREF="node25.html">Lokaliteit</A>
+ &nbsp; <B>  <A ID="tex2html133"
+  HREF="node1.html">Inhoudsopgave</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

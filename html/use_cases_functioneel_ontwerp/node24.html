@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2021.2 (Released July 1, 2021) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>Eenvoudige control flow</TITLE>
+<META NAME="description" CONTENT="Eenvoudige control flow">
+<META NAME="keywords" CONTENT="use_cases_functioneel_ontwerp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2021.2">
+
+<LINK REL="STYLESHEET" HREF="use_cases_functioneel_ontwerp.css">
+
+<LINK REL="next" HREF="node25.html">
+<LINK REL="previous" HREF="node23.html">
+<LINK REL="next" HREF="node25.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node25.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node16.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node23.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html128"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Volgende:</B> <A
+ HREF="node25.html">Lokaliteit</A>
+<B> Omhoog:</B> <A
+ HREF="node16.html">Wat is een goed</A>
+<B> Vorige:</B> <A
+ HREF="node23.html">Kleine klassen en methoden</A>
+ &nbsp; <B>  <A ID="tex2html129"
+  HREF="node1.html">Inhoudsopgave</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A ID="SECTION00048000000000000000">
+Eenvoudige control flow</A>
+</H2>
+	Ook is een methode begrijpelijker naarmate de control flow eenvoudiger is. Daarom proberen we een diepe nesting van while’s, for’s en if’s te vermijden. en klein maar vaak gezien voorbeeld van moeilijk te lezen code is het volgende: 
+<BR>
+<P>
+<BR>
+<IMG
+ STYLE="height: 0.46ex; vertical-align: -0.12ex; " SRC="img1.svg"
+ ALT="\begin{minted}{java}
+if (!test) {
+return false;
+} else {
+return true;
+}
+\end{minted}">
+<BR>
+Dit kan korter en daarmee duidelijker opgeschreven worden:
+
+<P>
+<BR>
+<IMG
+ STYLE="height: 0.46ex; vertical-align: -0.12ex; " SRC="img2.svg"
+ ALT="\begin{minted}{java}
+return test;
+\end{minted}">
+<BR>
+
+<P>
+Een andere belangrijke manier om eenvoud te bereiken, is verwoord
+	in het volgende principe: ieder onderdeel van de code dient slechts één
+	verantwoordelijkheid te hebben. Dit principe geldt voor alle niveaus:
+	opdrachten, methoden en klassen. 
+<BR>
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

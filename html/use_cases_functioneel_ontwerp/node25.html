@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2021.2 (Released July 1, 2021) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>Lokaliteit</TITLE>
+<META NAME="description" CONTENT="Lokaliteit">
+<META NAME="keywords" CONTENT="use_cases_functioneel_ontwerp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2021.2">
+
+<LINK REL="STYLESHEET" HREF="use_cases_functioneel_ontwerp.css">
+
+<LINK REL="next" HREF="node26.html">
+<LINK REL="previous" HREF="node24.html">
+<LINK REL="next" HREF="node26.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node26.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node16.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node24.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html130"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Volgende:</B> <A
+ HREF="node26.html">Constanten</A>
+<B> Omhoog:</B> <A
+ HREF="node16.html">Wat is een goed</A>
+<B> Vorige:</B> <A
+ HREF="node24.html">Eenvoudige control flow</A>
+ &nbsp; <B>  <A ID="tex2html131"
+  HREF="node1.html">Inhoudsopgave</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A ID="SECTION00049000000000000000">
+Lokaliteit</A>
+</H2>
+
+<P>
+– Op methodeniveau proberen we methoden te vermijden die zowel
+	een waarde opleveren als een of meer attributen wijzigen. Een dergelijke
+	methode heeft twee verantwoordelijkheden: iets aan de toestand van het
+	object veranderen en een resultaat teruggeven.
+	Er zijn op deze regel overigens wel uitzonderingen. Het is bijvoorbeeld
+	niet verkeerd om een methode een waarde terug te laten geven die laat
+	zien of de actie die de methode moet uitvoeren, geslaagd is. Een voorbeeld hiervan is de methode
+	public boolean add(E e)
+	in de klasse ArrayList. Deze methode geeft de waarde true terug als
+	het toevoegen van het element geleid heeft tot een verandering van de
+	arraylist, en false als het toevoegen niet gelukt is.
+	– Op klassenniveau zullen we het principe van gescheiden verant-
+	woordelijkheden als een van de leidraden gebruiken bij de keuze van
+	klassen in een ontwerp. Het is een goede gewoonte om bij het ontwerp
+	het doel van een klasse – we kunnen ook zeggen: de verantwoordelijk-
+	heid van de klasse – in een kort zinnetje expliciet te vermelden.
+	Als in zo’n zinnetje het woordje ‘en’ voorkomt, moet op zijn minst
+	onderzocht worden of die klasse niet beter gesplitst kan worden, zoals
+	in: deze klasse representeert een order en coördineert de toewijzing van
+	containers aan die order. Het antwoord is in elk geval ‘ja’ als dat kan
+	gebeuren zonder dat er veel extra interactie tussen die klassen nodig is.
+	Gescheiden verantwoordelijkheden maken code gemakkelijker te begrij-
+	pen en alleen al daarom ook gemakkelijker te wijzigen en uit te breiden.
+	Een wijziging of uitbreiding is echter ook des te gemakkelijker, naarmate
+	deze op minder plaatsen in de code van invloed is. Stel bijvoorbeeld dat
+	een wijziging invloed heeft op de signatuur van drie methoden uit drie
+	verschillende klassen, en dat elk van die drie methoden op vijf verschil-
+	lende plaatsen wordt aangeroepen. Om die ene wijziging door te voeren,
+	moeten we dan op tenminste achttien plaatsen in de code iets veran-
+	deren: de drie methoden plus de vijftien aanroepen.
+	Niet alleen moet elk onderdeel van de code slechts één verantwoorde-
+	lijkheid hebben, iedere verantwoordelijkheid van het systeem als geheel
+	moet bij voorkeur ook slechts op één plek in de code gerealiseerd zijn.
+	Als we dan iets wijzigen aan die verantwoordelijkheid, dan hoeven we
+	alleen op die plek iets te veranderen. We noemen deze eis aan de code
+	het principe van lokaliteit.
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A
+ HREF="node26.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node16.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node24.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html130"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Volgende:</B> <A
+ HREF="node26.html">Constanten</A>
+<B> Omhoog:</B> <A
+ HREF="node16.html">Wat is een goed</A>
+<B> Vorige:</B> <A
+ HREF="node24.html">Eenvoudige control flow</A>
+ &nbsp; <B>  <A ID="tex2html131"
+  HREF="node1.html">Inhoudsopgave</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>
