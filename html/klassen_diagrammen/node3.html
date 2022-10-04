@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2021.2 (Released July 1, 2021) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>De notatie van een klasse</TITLE>
+<META NAME="description" CONTENT="De notatie van een klasse">
+<META NAME="keywords" CONTENT="klassen_diagrammen">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2021.2">
+
+<LINK REL="STYLESHEET" HREF="klassen_diagrammen.css">
+
+<LINK REL="next" HREF="node4.html">
+<LINK REL="previous" HREF="node2.html">
+<LINK REL="next" HREF="node4.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node4.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="klassen_diagrammen.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node2.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html16"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Volgende:</B> <A
+ HREF="node4.html">Associaties</A>
+<B> Omhoog:</B> <A
+ HREF="klassen_diagrammen.html">Code Gorilla Klassendiagrammen</A>
+<B> Vorige:</B> <A
+ HREF="node2.html">Inleiding</A>
+ &nbsp; <B>  <A ID="tex2html17"
+  HREF="node1.html">Inhoudsopgave</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H1><A ID="SECTION00030000000000000000">
+De notatie van een klasse</A>
+</H1>
+
+<P>
+
+<P><P>
+<BR>
+
+<P>
+<IMG
+  WIDTH="426" HEIGHT="344" STYLE=""
+ SRC="./diagram1.png"
+ ALT="Image diagram1"> 
+<BR>
+Figuur 1. Voorbeeld van een klassediagram.
+
+<P>
+
+<P>
+We bekijken eerst de notatie voor een klasse. In figuur 1 zien we dat het klassendiagram bestaat uit drie delen: 
+<BR>	
+<OL>
+<LI>De naam van de klasse
+</LI>
+<LI>De attributen van de klasse
+</LI>
+<LI>De methoden van de klasse
+	
+</LI>
+</OL>
+
+<P>
+Op ontwerpniveau wordt soms geen java-typen (zoals int, string etc.) gebruikt om de typen weer te geven. Men kan ook duidingen zoals 'Geheel getal' of 'Bedrag' en dergelijke gebruiken. 
+<BR>
+<P>
+Voor attributen hanteerd UML de volgende syntax: 
+<BR>	<BR>
+<IMG
+ STYLE="height: 0.46ex; vertical-align: -0.12ex; " SRC="img1.svg"
+ ALT="\begin{minted}{java}
+[toegang] naam[: type] [= waarde]
+\end{minted}">
+<BR>
+
+<P>
+
+<P></P>
+
+<P>
+<SPAN  CLASS="textit">Toegang</SPAN> geeft aan of het attribuut behoort tot: 
+<BR>	
+<UL>
+<LI>Public	(+)
+</LI>
+<LI>Private	(<SPAN CLASS="MATH"><IMG
+ STYLE="height: 2.01ex; vertical-align: -0.31ex; " SRC="img2.svg"
+ ALT="$-$"></SPAN>)
+</LI>
+<LI>Package	(<SPAN CLASS="MATH"><IMG
+ STYLE="height: 1.31ex; vertical-align: -0.12ex; " SRC="img3.svg"
+ ALT="$\sim$"></SPAN>)
+</LI>
+<LI>Protected (#)
+	
+</LI>
+</UL>
+
+<P>
+<SPAN  CLASS="textit">Naam</SPAN> en <SPAN  CLASS="textit">Type</SPAN> geven de naam en het type van het attribuut weer.
+
+<P>
+De volledige syntaxis voor methodeduidingen is: 
+<BR>	<BR>
+<IMG
+ STYLE="height: 0.46ex; vertical-align: -0.12ex; " SRC="img4.svg"
+ ALT="\begin{minted}{c}
+[toegang] naam([parameterlijst]) [: resultaattype]
+\end{minted}">
+<BR>
+
+<P>
+Voorbeeld: 
+<BR>
+<P>
+
+<P></P>
+
+<P>
+Een methode voor de klasse order die gebruikt kan worden om de BTW uit te rekenen is dan als volgt: 
+<BR>
+<P>
+<BR>
+<IMG
+ STYLE="height: 0.46ex; vertical-align: -0.12ex; " SRC="img5.svg"
+ ALT="\begin{minted}{Java}
++berekenBTW(bedrag: Double): Double
+\end{minted}">
+<BR>
+
+<P>
+Attributen en/of methoden kunnen worden weggelaten uit het diagram. 
+<BR>	
+
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>
