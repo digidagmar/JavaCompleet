@@ -20,74 +20,34 @@
 		\item Het wordt ontwikkeld door \'{e}\'{e}n programmeur
 		\item Het kan worden ontwikkeld in een beperkte tijd (uren of dagen maar geen maanden of jaren)
 		\item Er is meteen al een duidelijke productomschrijving waaruit nauwkeurig valt op te maken wat het programma doet
-		\item Er is gen gebruikersgroep voor wie het programma per se onderhouden moet worden
+		\item Er is geen gebruikersgroep voor wie het programma per se onderhouden moet worden
 	\end{itemize}
 
 	\section{Softwareontwikkeling}
 	
 	\subsection{Voortraject}
 	
-	In de rest van deze paragraaf gebruiken we als voorbeeld van een groot
-	programma regelmatig een informatiesysteem voor een bedrijf dat ver-
-	schillende typen containers verhuurt. De huurder neemt de containers
-	op de plaats van vertrek in ontvangst en levert ze weer in op de plaats
-	van bestemming; de verhuurder zorgt ervoor dat ze weer bij een vol-
-	gende huurder terechtkomen. Het bedrijf heeft twintig kantoren in
-	verschillende landen. Het informatiesysteem moet alle containers gaan
-	volgen en de kantoren in staat stellen om snel te zien of aan een verzoek
-	van een huurder voldaan kan worden en welke containers daar dan
-	het best voor gebruikt kunnen worden. Uiteindelijk moet dat tot een
-	efficiënter gebruik van containers leiden. \\
-	Deze cursus gaat niet over softwareontwikkeling in het groot; daar zijn
-	andere cursussen voor. Wat we in deze cursus echter wel willen, is u
-	een programmeerstijl bijbrengen die ook bruikbaar is voor het program-
-	meren in het groot. In een cursus over objectgeoriënteerd programmeren
-	ligt dat ook voor de hand, omdat deze programmeerstijl bij uitstek is
-	ontwikkeld met het oog op grote programma’s. In dat licht moeten de
-	eisen worden gezien die we in deze cursus aan programma’s zullen
-	stellen. We zullen daarom in deze paragraaf over de grens van de
-	cursus kijken, naar softwareontwikkeling in het algemeen. \\
+	In de rest van deze paragraaf gebruiken we als voorbeeld van een groot programma regelmatig een informatiesysteem voor een bedrijf dat verschillende typen containers verhuurt. De huurder neemt de containers op de plaats van vertrek in ontvangst en levert ze weer in op de plaats van bestemming; de verhuurder zorgt ervoor dat ze weer bij een volgende huurder terechtkomen. Het bedrijf heeft twintig kantoren in verschillende landen. Het informatiesysteem moet alle containers gaan volgen en de kantoren in staat stellen om snel te zien of aan een verzoek van een huurder voldaan kan worden en welke containers daar dan het best voor gebruikt kunnen worden. Uiteindelijk moet dat tot een efficiënter gebruik van containers leiden. \\
+	Deze cursus gaat niet over softwareontwikkeling in het groot; daar zijn andere cursussen voor. Wat we in deze cursus echter wel willen, is u een programmeerstijl bijbrengen die ook bruikbaar is voor het programmeren in het groot. In een cursus over objectgeoriënteerd programmeren ligt dat ook voor de hand, omdat deze programmeerstijl bij uitstek is ontwikkeld met het oog op grote programma’s. In dat licht moeten de eisen worden gezien die we in deze cursus aan programma’s zullen 	stellen. We zullen daarom in deze paragraaf over de grens van de cursus kijken, naar softwareontwikkeling in het algemeen. \\
+	
 
-	Voordat de ontwikkeling start, is er meestal al een heel traject afgelegd,
-	het voortraject. Dit traject start bijvoorbeeld met het signaleren van een
-	probleem of het ontstaan van een nieuwe markt. \\
-	Kijk als voorbeeld naar het systeem voor het containerverhuurbedrijf.
-	Het voortraject kan daar begonnen zijn met de constatering dat de
-	bedrijfsresultaten verslechterden. Toen onderzocht werd hoe dat kwam,
-	bleken de tarieven aan de hoge kant. Een analyse van het bedrijfsproces
-	leerde, dat er kosten bespaard konden worden door de containers
-	efficiënter te gebruiken. Het kwam te vaak voor dat er bijvoorbeeld een
-	stel containers leeg van Rotterdam naar Liverpool werd gebracht, terwijl
-	er in Birmingham vergelijkbare containers op een verhuurder stonden te
-	wachten. Die vielen dan weer net onder een ander kantoor, zodat hun
-	beschikbaarheid niet duidelijk werd. Eén informatiesysteem waarop
-	alle kantoren zijn aangesloten, wordt als een mogelijke oplossing gezien.
-	Als het management voldoende in het idee ziet om er geld in te steken,
-	gaat het project pas echt van start. \\
-	Tijdens het voortraject wordt meestal ook het echte ontwikkeltraject
-	opgezet: er wordt bijvoorbeeld bepaald wat het mag kosten en hoe lang
-	het mag duren. \\
+	Voordat de ontwikkeling start, is er meestal al een heel traject afgelegd, het voortraject. Dit traject start bijvoorbeeld met het signaleren van een probleem of het ontstaan van een nieuwe markt. \\
+	Kijk als voorbeeld naar het systeem voor het containerverhuurbedrijf. Het voortraject kan daar begonnen zijn met de constatering dat de	bedrijfsresultaten verslechterden. Toen onderzocht werd hoe dat kwam, bleken de tarieven aan de hoge kant. Een analyse van het bedrijfsproces 	leerde, dat er kosten bespaard konden worden door de containers effici\"{e}nter te gebruiken. Het kwam te vaak voor dat er bijvoorbeeld een stel containers leeg van Rotterdam naar Liverpool werd gebracht, terwijl 	er in Birmingham vergelijkbare containers op een verhuurder stonden te wachten. Die vielen dan weer net onder een ander kantoor, zodat hun beschikbaarheid niet duidelijk werd. Eén informatiesysteem waarop alle kantoren zijn aangesloten, wordt als een mogelijke oplossing gezien. \\
+	Als het management voldoende in het idee ziet om er geld in te steken, gaat het project pas echt van start. \\
+	Tijdens het voortraject wordt meestal ook het echte ontwikkeltraject opgezet: er wordt bijvoorbeeld bepaald wat het mag kosten en hoe lang het mag duren. \\
 	
 	\subsection{Analyse}
 	
-	In de eerste fase, de analyse, moet worden vastgesteld wat er nu eigenlijk
-	precies ontwikkeld moet worden en aan welke eisen het product moet
-	voldoen; pas daarna wordt besloten of het project verder gaat. Een pre-
-	cieze specificatie is nodig om vast te kunnen stellen of het systeem wel
-	met bestaande methoden en technieken gerealiseerd kan worden en of
-	dat kan binnen de randvoorwaarden die in het voortraject zijn bepaald.
-	Ontwikkelaars, opdrachtgevers en toekomstige gebruikers moeten dus
-	rond de tafel gaan zitten om die specificatie op te stellen. Een manier om
-	dat te doen, is het opsporen van alle gewenste gebruiksmogelijkheden (use
-	cases) van het systeem. Iedere gebruiksmogelijkheid is een soort scenario
-	waarin een typische interactie tussen een mogelijke gebruiker en het sys-
-	teem wordt weergegeven. \\
-	Twee gebruiksmogelijkheden van het containersysteem zijn bijvoorbeeld
-	de volgende: \\
+	In de eerste fase, de analyse, moet worden vastgesteld wat er nu eigenlijk precies ontwikkeld moet worden en aan welke eisen het product moet voldoen; pas daarna wordt besloten of het project verder gaat. Een precieze specificatie is nodig om vast te kunnen stellen of het systeem wel met bestaande methoden en technieken gerealiseerd kan worden en of dat kan binnen de randvoorwaarden die in het voortraject zijn bepaald. Ontwikkelaars, opdrachtgevers en toekomstige gebruikers moeten dus rond de tafel gaan zitten om die specificatie op te stellen. Een manier om dat te doen, is het opsporen van alle gewenste gebruiksmogelijkheden (use cases) van het systeem. Iedere gebruiksmogelijkheid is een soort scenario waarin een typische interactie tussen een mogelijke gebruiker en het systeem wordt weergegeven. \\
+	
+	\includegraphics[scale=1.1]{use\_case\_example.png} \\
+	Figuur 1. Voorbeeld van use-cases.
+	\newpage
+	Twee gebruiksmogelijkheden van het containersysteem zijn bijvoorbeeld de volgende: \\
+	
 	\begin{itemize}
 		\item Het systeem verstrekt op verzoek van een medewerker, wiens taak het
-		is om containers toe te wijzen, een overzicht van alle ongebruikte con-
-		tainers (aantal, type en locatie) op een gegeven datum in een gegeven
+		is om containers toe te wijzen, een overzicht van alle ongebruikte containers (aantal, type en locatie) op een gegeven datum in een gegeven
 		gebied (een land, een groep landen of de hele wereld).
 		\item Een medewerker voert een mogelijke order in (aantal containers van
 		een bepaald type, plaats en datum van vertrek, plaats en datum van
@@ -136,8 +96,7 @@
 	
 	\subsection{Ontwerp}
 	
-	Tijdens het ontwerp van een objectgeoriënteerd systeem wordt vast-
-	gesteld uit welke klassen het programma zal gaan bestaan en hoe die
+	Tijdens het ontwerp van een objectgeoriënteerd systeem wordt vastgesteld uit welke klassen het programma zal gaan bestaan en hoe die
 	klassen met elkaar samenhangen. Aan het eind van een ontwerpstap
 	moet het volledig duidelijk zijn welke verantwoordelijkheden elke klasse
 	in het programma tot dan toe zal hebben. Wat dan nog niet vastligt, is hoe elke klasse haar verantwoordelijkheden zal realiseren. 
@@ -174,8 +133,7 @@
 	
 	Het testen van een bepaalde constructiestap verloopt ook weer in stappen.
 	Elke klasse wordt eerst afzonderlijk getest. De programmeur zal daarvoor
-	een kleine testomgeving construeren. In Objectgeoriënteerd program-
-	meren maakten we hiervoor gebruik van JUnit. Als alle klassen lijken te
+	een kleine testomgeving construeren. In Objectgeoriënteerd programmeren maakten we hiervoor gebruik van JUnit. Als alle klassen lijken te
 	werken, worden ze samengevoegd en wordt het programma als geheel
 	getest. Hierbij zullen eventuele misverstanden tussen de verschillende
 	programmeurs aan het licht komen. Als het implementatiemodel volledig
@@ -187,8 +145,7 @@
 	fouten te zitten. Om dat aantal zo klein mogelijk te houden, is een goede
 	teststrategie van zeer groot belang. Het zal duidelijk zijn dat voor ieder
 	programma, hoe klein ook, slechts een miniem deel van alle mogelijke
-	combinaties van invoerwaarden daadwerkelijk kan worden uitgepro-
-	beerd. De kunst is nu dat deel zo te kiezen, dat het zo veel mogelijk
+	combinaties van invoerwaarden daadwerkelijk kan worden uitgeprobeerd. De kunst is nu dat deel zo te kiezen, dat het zo veel mogelijk
 	representatief is voor alle invoer.
 	
 	\subsection{Afronding}
@@ -200,8 +157,7 @@
 	ket betreft, wordt op dat moment misschien een gratis te downloaden
 	bètaversie op internet gezet, zodat potentiële klanten deze uit kunnen
 	proberen. Daar komen altijd nog fouten uit, die in de afrondingsfase
-	verbeterd kunnen worden. Tot slot wordt het systeem dan echt over-
-	gedragen of vrijgegeven voor verkoop. \\
+	verbeterd kunnen worden. Tot slot wordt het systeem dan echt overgedragen of vrijgegeven voor verkoop. \\
 	Het hier geschetste ontwikkeltraject is niet het enig mogelijke. Er zijn
 	bijvoorbeeld andere faseringen mogelijk. Als ook de analyse en de
 	afronding in fasen worden uitgevoerd, bestaat het hele traject uit het
@@ -217,8 +173,7 @@
 	
 	Op deze wijze kan ook een prototype worden ontwikkeld: een experimen-
 	tele versie van een te realiseren systeem. Meestal wordt een prototype
-	gebruikt om inzicht te krijgen in de werking van een uiteindelijk pro-
-	gramma. Aan de hand van zo’n prototype kan worden getoetst of aan
+	gebruikt om inzicht te krijgen in de werking van een uiteindelijk programma. Aan de hand van zo’n prototype kan worden getoetst of aan
 	alle eisen is voldaan en of het programma aan de verwachtingen van de
 	opdrachtgever voldoet. Doordat de opdrachtgever in een vroeg stadium
 	met het prototype kan ‘spelen’, is het mogelijk het ontwerp tijdig in een
@@ -249,7 +204,7 @@
 	gebruiker op nieuwe ideeën brengt: ‘het zou toch ook wel handig zijn
 	als ...’, of dat de voortdurende voortschrijdende techniek nieuwe
 	mogelijkheden binnen bereik brengt. \\
-	
+	\newpage
 	Een programma kan op deze wijze vele jaren meegaan, in steeds weer
 	nieuwe gedaanten, zonder ooit echt uit de roulatie te worden genomen.
 	Uit het oogpunt van softwarearchitectuur zou het misschien verstandig
@@ -263,11 +218,10 @@
 	dateerde nog uit de jaren zestig van de vorige eeuw! \\
 	In de totale levensloop van een groot systeem is onderhoud dus
 	minstens zo belangrijke factor als de oorspronkelijke ontwikkeling. \\
-	
+	\newpage
 	\section{Wat is een goed programma}
 	
-	Welke eisen kunnen we nu, in het licht van de zojuist geschetste levens-
-	loop van softwaresystemen, stellen aan ontwerp en implementatie van
+	Welke eisen kunnen we nu, in het licht van de zojuist geschetste levensloop van softwaresystemen, stellen aan ontwerp en implementatie van
 	een dergelijk systeem?
 	
 	\subsection{Correctheid}
@@ -288,7 +242,7 @@
 	overeenstemming blijkt en de gebruikers ervaren het programma als
 	onhandig of zelfs onbruikbaar, dan is het programma niet goed, zelfs
 	niet wanneer bewezen is dat het correct is. \\
-	
+	\newpage
 	\subsection{Robuustheid}
 	
 	Correctheid alleen is bovendien niet genoeg. Een programma moet ook
@@ -296,8 +250,7 @@
 	kunnen fouten van de gebruiker zijn: bijvoorbeeld het invoeren van let-
 	ters als een getal wordt verwacht, of het opgeven van een niet-bestaande
 	datum, of het opvragen van gegevens uit een bestand die daar niet in
-	zitten, of het kiezen van een verkeerde menuoptie waardoor een onbe-
-	doelde interactie wordt gestart of juist het abusievelijk afbreken van een
+	zitten, of het kiezen van een verkeerde menuoptie waardoor een onbedoelde interactie wordt gestart of juist het abusievelijk afbreken van een
 	lopende interactie. \\
 	In zulke gevallen verwachten we een redelijke respons van de software
 	waarmee we werken: een geluid dat aangeeft dat we iets doen wat niet
@@ -318,8 +271,7 @@
 	meer: programmeurs staan dan net zo vreemd tegenover hun eigen code
 	als tegenover die van ieder ander. \\
 	Een manier om de begrijpelijkheid van code te verbeteren, is een goede
-	documentatie van het programma in de vorm van uitgebreid commen-
-	taar. In onze Java-cursussen gebruiken we daarvoor veelal javadoc,
+	documentatie van het programma in de vorm van uitgebreid commentaar. In onze Java-cursussen gebruiken we daarvoor veelal javadoc,
 	aangevuld met gewoon commentaar bij lastige stukken broncode. \\
 	
 	\subsection{Uitbreidbaarheid}
@@ -399,42 +351,9 @@
 	
 	\subsection{Lokaliteit}
 	
-	– Op methodeniveau proberen we methoden te vermijden die zowel
-	een waarde opleveren als een of meer attributen wijzigen. Een dergelijke
-	methode heeft twee verantwoordelijkheden: iets aan de toestand van het
-	object veranderen en een resultaat teruggeven.
-	Er zijn op deze regel overigens wel uitzonderingen. Het is bijvoorbeeld
-	niet verkeerd om een methode een waarde terug te laten geven die laat
-	zien of de actie die de methode moet uitvoeren, geslaagd is. Een voorbeeld hiervan is de methode
-	public boolean add(E e)
-	in de klasse ArrayList. Deze methode geeft de waarde true terug als
-	het toevoegen van het element geleid heeft tot een verandering van de
-	arraylist, en false als het toevoegen niet gelukt is.
-	– Op klassenniveau zullen we het principe van gescheiden verant-
-	woordelijkheden als een van de leidraden gebruiken bij de keuze van
-	klassen in een ontwerp. Het is een goede gewoonte om bij het ontwerp
-	het doel van een klasse – we kunnen ook zeggen: de verantwoordelijk-
-	heid van de klasse – in een kort zinnetje expliciet te vermelden.
-	Als in zo’n zinnetje het woordje ‘en’ voorkomt, moet op zijn minst
-	onderzocht worden of die klasse niet beter gesplitst kan worden, zoals
-	in: deze klasse representeert een order en coördineert de toewijzing van
-	containers aan die order. Het antwoord is in elk geval ‘ja’ als dat kan
-	gebeuren zonder dat er veel extra interactie tussen die klassen nodig is.
-	Gescheiden verantwoordelijkheden maken code gemakkelijker te begrij-
-	pen en alleen al daarom ook gemakkelijker te wijzigen en uit te breiden.
-	Een wijziging of uitbreiding is echter ook des te gemakkelijker, naarmate
-	deze op minder plaatsen in de code van invloed is. Stel bijvoorbeeld dat
-	een wijziging invloed heeft op de signatuur van drie methoden uit drie
-	verschillende klassen, en dat elk van die drie methoden op vijf verschil-
-	lende plaatsen wordt aangeroepen. Om die ene wijziging door te voeren,
-	moeten we dan op tenminste achttien plaatsen in de code iets veran-
-	deren: de drie methoden plus de vijftien aanroepen.
-	Niet alleen moet elk onderdeel van de code slechts één verantwoorde-
-	lijkheid hebben, iedere verantwoordelijkheid van het systeem als geheel
-	moet bij voorkeur ook slechts op één plek in de code gerealiseerd zijn.
-	Als we dan iets wijzigen aan die verantwoordelijkheid, dan hoeven we
-	alleen op die plek iets te veranderen. We noemen deze eis aan de code
-	het principe van lokaliteit.
+	Op methodeniveau proberen we methoden te vermijden die zowel een waarde opleveren als een of meer attributen wijzigen. Een dergelijke methode heeft twee verantwoordelijkheden: iets aan de toestand van het	object veranderen en een resultaat teruggeven.
+	Er zijn op deze regel overigens wel uitzonderingen. Het is bijvoorbeeld	niet verkeerd om een methode een waarde terug te laten geven die laat zien of de actie die de methode moet uitvoeren, geslaagd is. Een voorbeeld hiervan is de methode public boolean add(E e) in de klasse ArrayList. Deze methode geeft de waarde true terug als het toevoegen van het element geleid heeft tot een verandering van de arraylist, en false als het toevoegen niet gelukt is. Op klassenniveau zullen we het principe van gescheiden verantwoordelijkheden als een van de leidraden gebruiken bij de keuze van klassen in een ontwerp. \\ 
+	Het is een goede gewoonte om bij het ontwerp het doel van een klasse – we kunnen ook zeggen: de verantwoordelijkheid van de klasse – in een kort zinnetje expliciet te vermelden. Als in zo’n zinnetje het woordje ‘en’ voorkomt, moet op zijn minst onderzocht worden of die klasse niet beter gesplitst kan worden, zoals in: deze klasse representeert een order en co\"{o}rdineert de toewijzing van containers aan die order. Het antwoord is in elk geval ‘ja’ als dat kan gebeuren zonder dat er veel extra interactie tussen die klassen nodig is. Gescheiden verantwoordelijkheden maken code gemakkelijker te begrijpen en alleen al daarom ook gemakkelijker te wijzigen en uit te breiden. Een wijziging of uitbreiding is echter ook des te gemakkelijker, naarmate deze op minder plaatsen in de code van invloed is. Stel bijvoorbeeld dat een wijziging invloed heeft op de signatuur van drie methoden uit drie verschillende klassen, en dat elk van die drie methoden op vijf verschillende plaatsen wordt aangeroepen. Om die ene wijziging door te voeren, moeten we dan op tenminste achttien plaatsen in de code iets veranderen: de drie methoden plus de vijftien aanroepen. Niet alleen moet elk onderdeel van de code slechts \'{e}\'{e}n verantwoordelijkheid hebben, iedere verantwoordelijkheid van het systeem als geheel moet bij voorkeur ook slechts op één plek in de code gerealiseerd zijn. Als we dan iets wijzigen aan die verantwoordelijkheid, dan hoeven we alleen op die plek iets te veranderen. We noemen deze eis aan de code het principe van lokaliteit.
 	
 	\subsection{Constanten}
 	
@@ -445,7 +364,7 @@
 	plaatsen het getal 5 neerzetten en er komt een type container bij, dan
 	moeten we tien wijzigingen aanbrengen. Is er ergens in het systeem een
 	constante AANTALCONTAINERTYPEN gedefinieerd, dan hoeven we alleen
-	de waarde van die constante te veranderen.
+	de waarde van die constante te veranderen. \\
 	
 	Ook onze voorkeur voor attributen die van buiten de klasse niet ge-
 	wijzigd kunnen worden (information hiding), is terug te voeren op het
@@ -455,8 +374,8 @@
 	vrijwel altijd private en zijn we voorzichtig met het exporteren van
 	referenties naar attributen van een objecttype.
 	Het bereiken van lokaliteit is in de praktijk een van de moeilijkste zaken
-	bij objectgeoriënteerd programmeren (en bij programmeren in het alge-
-	meen).
+	bij objectgeoriënteerd programmeren (en bij programmeren in het algemeen). \\
+	
 	Op grond van het principe van lokaliteit willen we aan een klasse
 	gemakkelijk een nieuwe subklasse kunnen toevoegen. Stel bijvoorbeeld
 	dat er in het containersysteem een klasse Container is, met een subklasse
@@ -467,7 +386,7 @@
 	en op plekken waar het nodig is na te gaan met welk type container we
 	nu precies te maken hebben. Lokaliteit vereist dat dit op zo min mogelijk
 	plaatsen voorkomt. In de volgende leereenheid zullen we zien hoe Java
-	ons daarbij helpt.
+	ons daarbij helpt. \\
 	
 	\subsection{Lege koppeling}
 		
@@ -495,7 +414,7 @@
 	enige ervaring wel hoe het anders kan. Nog veel meer ervaring is nodig
 	om klassen dusdanig te kiezen en uit te werken, dat de resulterende code
 	voldoet aan onder andere de principes van gescheiden
-	verantwoordelijkheden, lage koppeling en lokaliteit.
+	verantwoordelijkheden, lage koppeling en lokaliteit. \\
 	De verschillende eisen aan de code zijn bovendien soms met elkaar in
 	conflict. Soms gaan een vergaande scheiding van verantwoordelijkheden
 	en een grote lokaliteit ten koste van de eenvoud van een ontwerp.
