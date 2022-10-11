@@ -12,6 +12,8 @@
 
 }
 </style>
+
+
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <html>
   <head>
@@ -24,7 +26,6 @@
         De bedoeling is per Mind Map een presentatie te maken en een LaTeX PDF bestand.
         Ook wil ik van het PDF bestand een LaTeX2HTML site maken. <br/>
         Ik heb deze week alvast een begin gemaakt met het uiteenzetten van deze onderwerpen. <br/>
-
       </p>
     </div>
     <div class="mid">
