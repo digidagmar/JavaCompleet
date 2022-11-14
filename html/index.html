@@ -3,14 +3,33 @@
   background-color: lightgrey;
   width: 100%;
   height: 150px;
+  z-index: -999;
 }
 .top h1 {
   margin-top: 25px;
   color: blue;
+  z-index: -999;
 }
 .mid {
+  z-index: -999;
 
 }
+.todo {
+  position:fixed;
+  top:155;
+  z-index:9999;
+  height:750px;
+  width:450px;
+  border-width:5px;
+  border-style:solid;
+  border-color:red;
+  margin-left:75%;
+  background-color: lightblue;
+}
+.todo h3 {
+  margin-left:50px;
+}
+
 </style>
 <html>
   <head>
@@ -25,6 +44,25 @@
         Ik heb deze week alvast een begin gemaakt met het uiteenzetten van deze onderwerpen. <br/>
 
       </p>
+    </div>
+    <div class="todo">
+      <h3> Behandelde onderwerpen</h3>
+      <ol>
+        <li>Abstracte Klassen en Interfaces</li>
+        <ul>
+          <li> <a href="pdf/opdracht001.pdf"> Opdracht 1 </a> </li>
+          <li>Presentatie 1</li>
+        </ul>
+      </ol>
+      <hr/>
+      <h3> Te behandelen onderwerpen </h3>
+      <ol>
+        <li> Java Spring Boot </li>
+        <ul>
+          <li>Opdracht 1</li>
+        </ul>
+      </ol>
+
     </div>
     <div class="mid">
       <h1> Java </h1>
